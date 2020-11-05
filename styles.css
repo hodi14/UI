@@ -1,7 +1,8 @@
 body {
   margin-top: 0;
   margin-bottom: 0;
-  background-color: #f8f9fa;
+  background-color: #FDFFFA;
+  color: #444140;;
   font-family:FarsiFont, Tahoma;
 }
 .width {
@@ -81,7 +82,25 @@ body {
   -ms-border-radius: 4rem;
   -o-border-radius: 4rem;
 }
+.cardNote {
+  border: #2c21e0 10px solid;
+}
+.cardQuestion {
+  border: #1ec76a 10px solid;
+}
+.cardTA {
+  border: #FFD204 10px solid;
+}
+.cardProject {
+  border: #DD003F 10px solid;
+}
 
+.cardContest{
+  border: #7C878E 10px solid;
+}
+.cardProfile {
+  border: #444140 10px solid;
+}
 .cardNote:hover {
   background-color: #56a8ff;
   color: #f8f9fa;
