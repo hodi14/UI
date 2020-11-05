@@ -1,105 +1,192 @@
 body {
   margin-top: 0;
   margin-bottom: 0;
-  background-color: lightgray;
+  background-color: #f8f9fa;
+  font-family:FarsiFont, Tahoma;
+}
+.width {
+  width: 1000px;
+  margin: auto;
 }
 
-.container {
-  width: ;
-}
-.navbar {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-
-}
 .signup {
   text-align: left;
 }
-
-.introduction {
-  margin: 2rem;
-  border-radius: 2rem;
-  padding: 2rem;
-  text-align: right;
-  background-color: #f8f9fa;
+.btn {
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
-
+.introduction {
+  position: relative;
+  padding: 4rem;
+  text-align: right;
+  z-index: 1;
+  margin-bottom: 4rem;
+}
+.features::before {
+  content: "";
+  width: 100px;
+  height: 150px;
+  background-color: #113245;
+  position: absolute;
+  top: -99px;
+  right: 0;
+  z-index: -2;
+}
+.features::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-color: #f8f9fa;
+  position: absolute;
+  right: 0;
+  top: -200.5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: -1;
+}
 .features {
+  position: relative;
+  border-top-left-radius: 100px;
+  background-color: #113245;
   text-align: center;
-  margin : auto;
   padding: 2rem;
+  transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+}
+.features .skew {
+  transform: skewY(2deg);
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
 }
 .card {
   text-align: center;
-  margin: 1rem;
-  border-radius: 1rem;
+  margin: 1.5rem;
+  border-radius: 4rem;
   width: 20rem;
   height: 20rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
 }
-.card-title { 
-  font-weight: bolder;
-}
+
 .cardNote:hover {
-  background-color: #2c92ff;
+  background-color: #56a8ff;
   color: #f8f9fa;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
 }
 .cardQuestion:hover {
-  background-color: #5acc75;
+  background-color: #3ad65f;
   color: #f8f9fa;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
 }
 .cardTA:hover {
-  background-color: #ffd146;
+  background-color: #ffd555;
   color: #f8f9fa;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
 }
 .cardProject:hover {
-  background-color: #ec5261;
+  background-color: #eb4959;
   color: #f8f9fa;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
 }
 .cardContest:hover {
-  background-color: #a8afb6;
+  background-color: #9ca5ad;
   color: #f8f9fa;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
 }
 .cardProfile:hover {
-  background-color: #50585f;
+  background-color: #44494e;
   color: #f8f9fa;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
 }
-
+.fill-empty-space {
+  min-height: 350px;
+  margin-top: -90px;
+  background-color: #113245;
+  z-index: -1;
+}
 .footer {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  position: relative;
+  min-height: 15rem ;
+  background-color:#f8f9fa;
   margin-bottom: 0;
+  margin-top: -200px;
   text-align: center;
-  background-color: #f8f9fa;
+  border-top-right-radius: 100px;
+  transform: skewY(2deg);
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  z-index: 2;
+}
+.footer::before {
+  content: "";
+  width: 100px;
+  height: 150px;
+  background-color:#f8f9fa;
+  position: absolute;
+  top: -99px;
+  left: 0;
+  z-index: -2;
+}
+
+.footer::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-color: #113245;
+  position: absolute;
+  left: 0;
+  top: -200.5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: -1;
+}
+
+.footer .skew {
+  transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
 }
 
 @font-face {
-  font-family: farsi-font;
-  src: url('./font/Shabnam-Light.eot');
-  src: url('./font/Shabnam-Light.eot?#iefix') format('embedded-opentype'),
-       url('./font/Shabnam-Light.woff') format('woff'),
-       url('./font/Shabnam-Light.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'FarsiFont';
   font-style: normal;
-}
-
-body{
-  font-family: "farsi-font";
-}
+  font-weight: 400;
+  src: url('fonts/vazir/Vazir-Bold.eot');
+  src: url('fonts/vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+     url('fonts/vazir/Vazir-Bold.woff2') format('woff2'),
+     url('fonts/vazir/Vazir-Bold.woff') format('woff'),
+     url('fonts/vazir/Vazir-Bold.ttf') format('truetype');
+  }
