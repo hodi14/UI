@@ -1,15 +1,19 @@
 body {
   margin-top: 0;
   margin-bottom: 0;
-  background-color: #FDFFFA;
-  color: #444140;;
+  background-color: #30c9e8;
+  color: #444140;
   font-family:FarsiFont, Tahoma;
 }
-.width {
-  width: 1000px;
-  margin: auto;
+.navbar > .btn-outline-dark:hover {
+  background-color: #113245;
 }
-
+.navbar {
+  background-color: #30c9e8;
+}
+.introduction > h1 {
+  color: #FDFFFA;;
+} 
 .signup {
   text-align: left;
 }
@@ -27,7 +31,7 @@ body {
   z-index: 1;
   margin-bottom: 4rem;
 }
-.features::before {
+/* .features::before {
   content: "";
   width: 100px;
   height: 150px;
@@ -41,7 +45,7 @@ body {
   content: "";
   width: 200px;
   height: 200px;
-  background-color: #f8f9fa;
+  background-color: #30c9e8;
   position: absolute;
   right: 0;
   top: -200.5px;
@@ -51,124 +55,166 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   z-index: -1;
-}
+} */
 .features {
   position: relative;
   border-top-left-radius: 100px;
-  background-color: #113245;
+  border-bottom-left-radius: 100px;
+  background-color: #FDFFFA;
   text-align: center;
   padding: 2rem;
-  transform: skewY(-2deg);
+  /* transform: skewY(-2deg);
   -webkit-transform: skewY(-2deg);
   -moz-transform: skewY(-2deg);
   -ms-transform: skewY(-2deg);
-  -o-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg); */
 }
 .features .skew {
-  transform: skewY(2deg);
+  /*transform: skewY(2deg);
   -webkit-transform: skewY(2deg);
   -moz-transform: skewY(2deg);
   -ms-transform: skewY(2deg);
   -o-transform: skewY(2deg);
+  */
+  max-width: 70%;
+  padding: 2rem;
+  background-color: #113245;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-top: -10rem;
+  margin-bottom: -5rem;
 }
 .card {
+  padding-bottom: 10rem;
   text-align: center;
   margin: 1.5rem;
   border-radius: 4rem;
-  width: 20rem;
-  height: 20rem;
+  width: 80%;
+  height: 80%;
   -webkit-border-radius: 4rem;
   -moz-border-radius: 4rem;
   -ms-border-radius: 4rem;
   -o-border-radius: 4rem;
 }
-.cardNote {
-  border: #2c21e0 10px solid;
+.card a{
+  border-color: #30c9e8;
+  width: 150%;
 }
+.card:hover a{
+  padding: auto;
+  margin: auto;
+  background-color:#FDFFFA;
+  color:#113245;
+  border: 2rem;
+}
+.cardNote {
+  border:#30c9e8 10px solid;
+}
+.cardNote a:hover {
+  background-color: #1D049F;
+  box-shadow: 0px 1px 1.5px 1px #FDFFFA;
+  color: #FDFFFA;
+  transform: translateY(-0.5px);
+  -webkit-transform: translateY(-0.5px);
+  -moz-transform: translateY(-0.5px);
+  -ms-transform: translateY(-0.5px);
+  -o-transform: translateY(-0.5px);
+}
+
 .cardQuestion {
-  border: #1ec76a 10px solid;
+  border: #30c9e8 0px solid;
+  background-color: #ffdf4e;
+}
+.cardQuestion a {
+  background-color: #113245;
+  color: #ffdf4e;
+  border: 0px;
 }
 .cardTA {
-  border: #FFD204 10px solid;
+  border: #30c9e8 10px solid;
 }
 .cardProject {
-  border: #DD003F 10px solid;
+  border: #30c9e8 10px solid;
 }
 
 .cardContest{
-  border: #7C878E 10px solid;
+  border: #30c9e8 10px solid;
 }
 .cardProfile {
-  border: #444140 10px solid;
+  border: #30c9e8 10px solid;
 }
 .cardNote:hover {
-  background-color: #56a8ff;
-  color: #f8f9fa;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  background-color:#30c9e8;
+  color: #FDFFFA;
+  transition: background-color 250ms linear;
+  -webkit-transition: background-color 250ms linear;
+  -moz-transition: background-color 250ms linear;
+  -ms-transition: background-color 250ms linear;
+  -o-transition: background-color 250ms linear;
 }
 .cardQuestion:hover {
-  background-color: #3ad65f;
-  color: #f8f9fa;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  background-color: #30c9e8;
+  color: #FDFFFA;
+  -webkit-transition: background-color 250ms linear;
+  -ms-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
 }
 .cardTA:hover {
-  background-color: #ffd555;
-  color: #f8f9fa;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  background-color: #30c9e8;
+  color: #FDFFFA;
+  -webkit-transition: background-color 250ms linear;
+  -ms-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
 }
 .cardProject:hover {
-  background-color: #eb4959;
-  color: #f8f9fa;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  background-color: #30c9e8 ;
+  color: #FDFFFA;
+  -webkit-transition: background-color 250ms linear;
+  -ms-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
 }
 .cardContest:hover {
-  background-color: #9ca5ad;
-  color: #f8f9fa;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  background-color: #30c9e8;
+  color: #FDFFFA;
+  -webkit-transition: background-color 250ms linear;
+  -ms-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
 }
 .cardProfile:hover {
-  background-color: #44494e;
-  color: #f8f9fa;
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  background-color:#30c9e8;
+  color: #FDFFFA;
+  -webkit-transition: background-color 250ms linear;
+  -ms-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
 }
-.fill-empty-space {
+/* .fill-empty-space {
   min-height: 350px;
   margin-top: -90px;
   background-color: #113245;
   z-index: -1;
-}
+} */
 .footer {
   position: relative;
   min-height: 15rem ;
-  background-color:#f8f9fa;
+  background-color: #30c9e8 ;
   margin-bottom: 0;
-  margin-top: -200px;
   text-align: center;
-  border-top-right-radius: 100px;
-  transform: skewY(2deg);
+  border-top-left-radius: 100px;
+  /* transform: skewY(2deg);
   -webkit-transform: skewY(2deg);
   -moz-transform: skewY(2deg);
   -ms-transform: skewY(2deg);
-  -o-transform: skewY(2deg);
+  -o-transform: skewY(2deg); */
   z-index: 2;
 }
-.footer::before {
+/* .footer::before {
   content: "";
   width: 100px;
   height: 150px;
-  background-color:#f8f9fa;
+  background-color:#FDFFFA;
   position: absolute;
   top: -99px;
   left: 0;
@@ -189,15 +235,16 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   z-index: -1;
-}
+} */
 
 .footer .skew {
-  transform: skewY(-2deg);
+  /* transform: skewY(-2deg);
   -webkit-transform: skewY(-2deg);
   -moz-transform: skewY(-2deg);
   -ms-transform: skewY(-2deg);
-  -o-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg); */
 }
+
 
 @font-face {
   font-family: 'FarsiFont';
