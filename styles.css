@@ -1,28 +1,43 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #003153;
+  background-color: #2c254d;
   color: #444140;
   font-family:FarsiFont, Tahoma;
 }
 
 /* Navbar */
-.navbar .btn-outline-dark {
-  border-color: #FDFFFA;
-  color: #FDFFFA;
-}
 .navbar {
-  background-color: #003153;
-  border-bottom: solid 2px #FDFFFA;
+  background-color: #FDFFFA;
+  border-bottom: solid 2px #2c254d;
 }
-.signup {
+
+.navbar .btn-outline-dark {
+  border-color:  #2c254d;
+  color:  #2c254d;
+}
+
+.navbar .btn-outline-dark:hover{
+  background-color: #6f539b;
+}
+
+.navbar .signup {
   text-align: left;
 }
 
-/* Introduction */
-.introduction > h1 {
-  color: #FDFFFA;
+.navbar .navbar-brand{
+  color: #2c254d;
 }
+.navbar .navbar-brand:hover{
+  color: #6f539b;
+}
+
+
+.btn {
+  border-radius: 20px;
+}
+
+/* Introduction */
 .introduction {
   color: #FDFFFA;;
   position: relative;
@@ -32,6 +47,10 @@ body {
   margin-bottom: 4rem;
 }
 
+.introduction > h1 {
+  color: #FDFFFA;
+}
+
 /* Features */
 .features {
   position: relative;
@@ -39,7 +58,7 @@ body {
   text-align: center;
   padding: 2rem;
 }
-.features .skew {
+.features .container{
   max-width: auto;
   padding: 2rem;
   border-radius: 50px;
@@ -101,9 +120,7 @@ body {
   -ms-transform: translateY(-0.5px);
   -o-transform: translateY(-0.5px);
 }
-.btn {
-  border-radius: 20px;
-}
+
 
 /* Note */
 .cardNote a {
@@ -189,7 +206,7 @@ body {
 .footer {
   position: relative;
   min-height: 15rem ;
-  background-color: #003153;
+  background-color: #2c254d;
   color: #FDFFFA;;
   padding-top: 8rem;
   margin-bottom: 0;
