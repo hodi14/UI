@@ -1,12 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #003153;
+  background-color: #FDFFFA;
   color: #444140;
   font-family:FarsiFont, Tahoma;
 }
 
-/* Navbar */
+/* Navbar *************************************************************/
 .navbar .btn-outline-dark {
   border-color: #FDFFFA;
   color: #FDFFFA;
@@ -14,12 +14,39 @@ body {
 .navbar {
   background-color: #003153;
   border-bottom: solid 2px #FDFFFA;
+  z-index: 1;
 }
 .signup {
   text-align: left;
 }
 
-/* Introduction */
+/* Sidebar *************************************************************/
+.sidebar {
+  margin-top: 4rem;
+  background-color: #003153;
+  height: 100%;
+  position: fixed;
+  border: solid 2px #FDFFFA;
+  padding-right: 0;
+  width: 20%;
+  overflow: hidden;
+}
+.sidebar .item {
+  color: #FDFFFA;
+  margin-right: 0;
+  margin-top: 2rem;
+  text-align: right;
+  width: 100%;
+  margin-right: 0;
+  border: solid 2px #FDFFFA;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 0;
+  display: block;
+}
+
+/* Introduction *************************************************************/
 .introduction > h1 {
   color: #FDFFFA;
 }
@@ -32,7 +59,7 @@ body {
   margin-bottom: 4rem;
 }
 
-/* Features */
+/* Features *************************************************************/
 .features {
   position: relative;
   background-color: #FDFFFA;
@@ -49,7 +76,7 @@ body {
   -o-border-radius: 50px;
 }
 
-/* Genaral Crds */
+/* Genaral Crds *************************************************************/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -105,7 +132,7 @@ body {
   border-radius: 20px;
 }
 
-/* Note */
+/* Note *************************************************************/
 .cardNote a {
   background-color: red;
   color: #FDFFFA;
@@ -120,7 +147,7 @@ body {
   -o-transition: background-color 250ms linear;
 }
 
-/* Question */
+/* Question *************************************************************/
 .cardQuestion a {
   background-color: green;
   color: #FDFFFA;
@@ -133,7 +160,7 @@ body {
   transition: background-color 250ms linear;
 }
 
-/* Project */
+/* Project *************************************************************/
 .cardProject a {
   background-color: blue;
   color: #FDFFFA;
@@ -146,7 +173,7 @@ body {
   transition: background-color 250ms linear;
 }
 
-/* TA */
+/* TA *************************************************************/
 .cardTA a {
   background-color: purple;
   color: #FDFFFA;
@@ -159,7 +186,7 @@ body {
   transition: background-color 250ms linear;
 }
 
-/* Contest */
+/* Contest *************************************************************/
 .cardContest a {
   background-color: orange;
   color: #FDFFFA;
@@ -172,7 +199,7 @@ body {
   transition: background-color 250ms linear;
 }
 
-/* Profile */
+/* Profile *************************************************************/
 .cardProfile a {
   background-color: #df9d39;
   color: #FDFFFA;
@@ -185,7 +212,7 @@ body {
   transition: background-color 250ms linear;
 }
 
-/* Footer */
+/* Landing Footer */
 .footer {
   position: relative;
   min-height: 15rem ;
@@ -209,40 +236,27 @@ body {
   margin: -6rem auto 10rem auto;
 }
 
-/* Sidebar */
-.sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+/* Footer */
+.sidebar .footer {
+  width: 100%;
+  position: relative;
+  background-color: #003153;
+  color: #FDFFFA;
+  margin-bottom: 2rem;
+  z-index: 2;
 }
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+.sidebar .social {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  margin-left: 1rem;
+  margin-top: 5rem;
 }
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.main {
-  margin-left: 160px;
-  padding: 0px 10px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.sidebar .skew {
+  text-align: center;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 0rem;
 }
 
 
