@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #FDFFFA;
+  background-color: #003153;
   color: #444140;
   font-family:FarsiFont, Tahoma;
 }
@@ -51,7 +51,7 @@ body {
   color: #FDFFFA;
 }
 .introduction {
-  color: #FDFFFA;;
+  color: #FDFFFA;
   position: relative;
   padding: 4rem;
   text-align: right;
@@ -65,6 +65,7 @@ body {
   background-color: #FDFFFA;
   text-align: center;
   padding: 2rem;
+  border-radius: 2rem;
 }
 .features .skew {
   max-width: auto;
@@ -256,7 +257,7 @@ body {
   text-align: center;
   padding: 0;
   margin: auto;
-  margin-bottom: 0rem;
+  margin-bottom: 2rem;
 }
 
 
