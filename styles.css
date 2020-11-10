@@ -1,13 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  /* background-color: #2c254d; */
+  background-color: #2c254d;
   color:  #2c254d;
-  background-color: #FDFFFA;
+  /* background-color: #FDFFFA; */
   font-family:FarsiFont, Tahoma;
 }
-body .container {
+
+body .content{
   max-width: 1000px;
+  margin: 0 auto;
 }
 /* Navbar */
 .navbar {
@@ -16,8 +18,8 @@ body .container {
 
 
 .navbar .btn-outline-dark {
-  border-color:  #2c254d;
-  color:  #2c254d;
+  border-color:  #FDFFFA;
+  color:  #FDFFFA;
 }
 
 .navbar .btn-outline-dark:hover{
@@ -29,7 +31,7 @@ body .container {
 }
 
 .navbar .navbar-brand{
-  color: #2c254d;
+  color: #FDFFFA;
 }
 .navbar .navbar-brand:hover{
   color: #6f539b;
@@ -42,7 +44,7 @@ body .container {
 
 /* Introduction */
 .introduction {
-  /* color: #FDFFFA;; */
+  color: #FDFFFA;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -50,7 +52,7 @@ body .container {
   padding: 4rem;
   text-align: right;
   z-index: 1;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .introduction h1 {
@@ -59,14 +61,23 @@ body .container {
 .introduction p {
   max-width: 30rem;
 }
-
+@media (max-width: 1000px) {
+  .introduction{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 /* Features */
 .features {
   position: relative;
   background-color: #FDFFFA;
   text-align: center;
   padding: 2rem;
-  margin-top: -10rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 .features .container{
   max-width: auto;
